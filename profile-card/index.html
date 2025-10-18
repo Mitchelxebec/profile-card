@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card | HNG Stage 0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <article data-testid="test-profile-card" tabindex="0" aria-label="Profile card for Mitchel Okoh">
+            <figure>
+                <img src="./image/my pic.jpg" alt="Profile picture of Mitchel Okoh" data-testid="test-user-avatar"
+                    tabindex="0">
+            </figure>
+
+            <section data-testid="test-user-info">
+                <header>
+                    <h2 data-testid="test-user-name" tabindex="0">Mitchel Okoh</h2>
+                </header>
+
+                <p data-testid="test-user-bio" tabindex="0">
+                    A passionate frontend developer learning to craft clean, accessible UIs.
+                </p>
+
+                <p data-testid="test-user-time" tabindex="0">
+                    Current time in Milliseconds:
+                </p>
+
+
+                <nav aria-label="social-links">
+                    <h3 data-testid="test-user-social"> Social Links</h3>
+                    <ul data-testid="test-user-social-links">
+                        <li><a href="https://x.com/Okoh_mitchel" target="_blank" rel="noopener"
+                                data-testid="test-user-social-twitter">Twitter</a></li>
+                        <li><a href="https://github.com/" target="_blank" rel="noopener"
+                                data-testid="test-user-social-github">GitHub</a></li>
+                    </ul>
+                </nav>
+
+                <section aria-labelledby="hobbies-title">
+                    <h3 id="hobbies-title">Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Coding</li>
+                        <li>Reading</li>
+                        <li>Gaming</li>
+                    </ul>
+                </section>
+                <section aria-labelledby="dislike-title">
+                    <h3 id="dislike-title">Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Procrastination</li>
+                        <li>Slow Internet</li>
+                    </ul>
+                </section>
+            </section>
+
+            <button tabindex="0" id="theme-toggle" aria-label="Toggle theme between light and dark">
+                Toggle Theme 🌙
+            </button>
+        </article>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
